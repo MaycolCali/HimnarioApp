@@ -37,7 +37,7 @@
   --fondo: linear-gradient(rgba(255, 255, 255, 0.83), rgba(255, 255, 255, 0.8));
   --border-color: #E5E5E5;
   --navfoot: rgba(255, 255, 255, .5);
-  --navfoot2: rgba(255, 255, 255, .8);
+  --navfoot2: rgba(255, 255, 255, .92);
   --textaddress: #5b666d;
   --blessing: #088be2;
 }
@@ -318,7 +318,7 @@ a .bx{
     font-size: 7rem;
   }
   .content{
-    padding-top: 20rem;
+    padding-top: 26rem;
   }
 }
 @media (max-width: 320px){
