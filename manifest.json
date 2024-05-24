@@ -1,7 +1,7 @@
 {
   "name": "Himnario App",
   "short_name": "HimnarioApp",
-  "theme_color": "#abd1f2",
+  "theme_color": "#121212",
   "background_color": "#121212",
   "display": "standalone",
   "orientation": "portrait",

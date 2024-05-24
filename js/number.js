@@ -31,7 +31,7 @@ function updateDisplay() {
   display.innerText = himnoInput;
 }
 function limpiarBusqueda() {
-  document.getElementById("display").value = "";
+  display.innerHTML = "";
 }
 
 window.addEventListener('beforeunload', function() {
