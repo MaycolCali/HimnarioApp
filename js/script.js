@@ -41,6 +41,8 @@ document.addEventListener('DOMContentLoaded', loadDarkModePreference);
 // Añadir evento al ícono de cambio de modo
 darkModeIcon.addEventListener('click', toggleDarkMode);
 
+window.addEventListener('popstate', loadDarkModePreference);
+
 /*================= Multiple Text =================*/
 const texts = document.querySelectorAll('.blessing-1');
 let currentIndex = 0;
@@ -86,9 +88,14 @@ function filtrarLista() {
   }
 }
 function limpiarBusqueda() {
-  document.getElementById("buscar_himno").value = "";
+  document.getElementById("buscar_himno").value = '';
+  
+  var listaElementos = document.getElementById("himnos");
+  var elementos = listaElementos.getElementsByTagName("a");
+  for (var i = 0; i < elementos.length; i++) {
+    elementos[i].style.display = "";
+  }
 }
 
-window.addEventListener('beforeunload', function() {
-  limpiarBusqueda();
-});
+document.addEventListener('DOMContentLoaded', limpiarBusqueda);
+window.addEventListener('popstate', limpiarBusqueda);
