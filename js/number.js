@@ -31,9 +31,14 @@ function updateDisplay() {
   display.innerText = himnoInput;
 }
 function limpiarBusqueda() {
-  display.innerHTML = "";
+  himnoInput = ''
+  display.innerHTML = ''
 }
 
 window.addEventListener('beforeunload', function() {
+  limpiarBusqueda();
+});
+
+window.addEventListener('load', function() {
   limpiarBusqueda();
 });
